@@ -70,15 +70,62 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <div class="container-cross-button">
                 <button type="button" class="cross-button" data-modal-close>
                   <svg class="svg-cross" width="10" height="16">
                     <use href="./images/sprite.svg#icon-cross"></use>
                   </svg>
                 </button>
-              </div>
+
+      <!-- Form -->
+                  <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+                    <form class="form">
+                      <ul class="modal-form-list">
+                      <li class="form-field">
+                        <label for="name" class="form-label">Ім`я</label>
+
+                          <div class="form-input-wrap">
+                            <input type="text" class="form-input" name="name" id="name">
+                            <svg width="18" height="18" class="svg-form">
+                            <use href="./images/sprite.svg#icon-person"></use>
+                          </div>
+                        </li>
+                    
+                      <li class="form-field">
+                        <label for="tel" class="form-label">Телефон</label>
+                          <div class="form-input-wrap">
+                            <input type="tel" class="form-input" name="tel" id="tel">
+                            <svg width="18" height="18" class="svg-form">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                          </div>
+                        </li>
+                    
+                      <li class="form-field">
+                        <label for="email" class="form-label">Пошта</label>
+                        <div class="form-input-wrap"> 
+                        <input type="email" class="form-input" name="email" id="email">
+                          <svg width="18" height="18" class="svg-form">
+                          <use href="./images/sprite.svg#icon-email"></use>
+                        </div>
+                        </li>
+                      <li class="form-field">
+                        <label for="textarea" class="form-label">Коментар</label>
+                        <textarea type="text" class="form-textarea" name="textarea" id="textarea" 
+                        placeholder="Введіть текст"></textarea>
+                      </li>
+
+
+                      <li class="form-check">
+                        <label for="check" class="form-label-check">Погоджуюся з розсилкою та приймаю<a class="form-label-check-link" href=""> Умови договору</a>
+                        <input type="checkbox" class="check" name="check" id="check">
+                          <span class="icon-check"></span>
+                          </label>
+                      </li>
+                      </ul>
+                          <button type=" submit" class="form-button">Відправити</button>
+                    </form>
+
             </div>
-          </div>
+          
         </div>
       </section>
       <!--Особливості-->
@@ -447,6 +494,21 @@
             </li>
           </ul>
         </div>
+
+        <!-- Footer form -->
+
+          <form class="footer-form">
+            <div class="footer-form-box">
+              <label class="footer-label" for="email">підпишіться на розсилку</label>
+              <input class="footer-input" type="email" name="email" id="email" placeholder="E-mail" />
+            </div>
+            <button class="footer-form-btn" type="submit">
+              <p class="footer-form-btn-text">Підписатися</p>
+              <svg class="svg-footer-form" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
