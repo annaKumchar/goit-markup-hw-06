@@ -604,6 +604,7 @@ footer {
 }
 
 .form-label {
+
   margin-bottom: 4px;
   text-align: left;
 
@@ -646,6 +647,10 @@ footer {
 }
 
 .form-button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+
   padding: 10px 52px;
 
   font-weight: 700;
